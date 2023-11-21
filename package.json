@@ -4,8 +4,11 @@
   "description": "wemakebucks ui design by shahin",
   "main": "none",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "start": "npx tailwindcss -i ./src/input.css -o ./public/css/style.css --watch"
   },
   "author": "shahintaluker",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
 }
