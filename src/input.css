@@ -1,3 +1,117 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    /* for menu item */
+    .bottom-menu li {
+        @apply text-center text-m-text-2;
+    }
+    .bottom-menu li i {
+        @apply text-2xl text-m-text-3;
+    }
+    .bottom-menu .active {
+        @apply text-[#6755e6];
+    }
+
+    .top-menu li {
+        @apply flex items-center  text-m-text-2 md:text-xl text-xl font-bold
+        items-center;
+    }
+    .top-menu li i {
+        @apply text-[16px] text-m-text-3;
+        margin-right: 5px;
+    }
+    .btn {
+        @apply px-4 py-2 rounded-md font-bold;
+        font-family: "Poppins", Sans-Serif;
+        font-size: 17px;
+    }
+    /* for menu item */
+
+    /* total earn card */
+    .total_card {
+        @apply w-full rounded-[30px] border-[1.5px] border-trans-300 px-4 py-7
+        md:py-6 lg:py-9
+        text-center bg-trans-b-100 relative py-8 backdrop-blur;
+    }
+
+    .total_card i {
+        @apply h-[70px] w-[70px] grid place-content-center text-4xl text-white
+        rounded-[100%] border-[1.5px] border-trans-ember bg-[#181B45];
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .total_card h2 {
+        @apply my-3 text-white font-ubantu text-2xl font-bold;
+    }
+
+    .total_card span {
+        @apply font-poppins text-text-colun-100;
+    }
+    .total_card p {
+        @apply text-text-colun-200 font-bold tracking-wide;
+    }
+    .home-input {
+        @apply w-90 sm:w-80 md:w-70 bg-trans-200 px-3 py-3
+        placeholder:font-medium placeholder:text-trans-200
+        text-trans-300 rounded-xl;
+    }
+    .home-input:hover,
+    .home-input:focus {
+      outline:2px solid rgba(255,255,255,0.4);
+    }
+}
+@layer utilities {
+    .bz {
+        z-index: -5001;
+    }
+
+    .glass-1 {
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        /* border: 1px solid rgba(255, 255, 255, 0.66); */
+    }
+
+    .gl {
+        /* background: rgba(255, 255, 255, 0.25); */
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .gl2 {
+        background: rgba(57, 39, 192, 0.386);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        /* border-radius: 10px; */
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .py100 {
+        padding: 100px 0;
+    }
+
+}
+
+@layer base {
+    @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;300;400;500;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+    * {
+        @apply font-poppins;
+    }
+
+    .container {
+        @apply mx-auto;
+    }
+    input {
+        border: 0;
+    }
+}

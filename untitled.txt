@@ -1,0 +1,44 @@
+    /* body {
+        background-image: radial-gradient(
+                circle farthest-corner at 10% 20%,
+                rgba(28, 18, 94, 0.733) 0%,
+                rgba(58, 9, 58, 0.4) 90%
+            ),
+            url(./../asset/background-landscape-with-full-moon_23-2147620168.avif);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 200% 100%;
+    } */
+    
+    
+        .bg {
+        background: #15102e;
+        background-image: url(./../asset/background-landscape-with-full-moon_23-2147620168.avif);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    
+    
+    
+                 <section class="p-y-20">
+                <div
+                    class="rounded-[10px] border-1 border-trans-100 text-white bg-trans-100 p-3 pt-10 px-4 flex flex-col md:flex-row gap-10"
+                >
+                    <div class="w-full space-y-2">
+                        <h4 class="text-3xl font-bold text-text-ember">
+                            GET PAID FOR
+                        </h4>
+                        <h3 class="text-xl font-medium">testing website</h3>
+                    </div>
+                    <div
+                        class="md:w-50 rounded-2xl bg-[#EC4A43] max-h-[500px]
+                        h-full grid place-items-center"
+                    >
+                        <div class="">
+                            <h4>Today Total payouts</h4>
+                            <p>$60000</p>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
