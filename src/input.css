@@ -55,12 +55,14 @@
     .total_card p {
         @apply text-text-colun-200 font-bold tracking-wide;
     }
+    
+    /* home input form */
     .home-input {
         @apply w-90 sm:w-80 md:w-70 bg-trans-200 px-3 py-3
         placeholder:font-medium placeholder:text-trans-200
-        text-trans-300 rounded-xl;
+        text-trans-400 rounded-xl my-2 transition;
     }
-    .home-input:hover,
+   
     .home-input:focus {
       outline:2px solid rgba(255,255,255,0.4);
     }
